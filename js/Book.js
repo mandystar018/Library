@@ -16,7 +16,7 @@ class Book {
 
     if (out){
       const newDueDate = new Date();
-    newDueDate.setDate(newDueDate.getDate() + 14);
+    newDueDate.setDate(newDueDate.getDate() + 14); // <== if you want to check the due date of a book change the + to - that way it will be two weeks overdue.
     book.dueDate = newDueDate;
     } else {
       this.dueDate = null;
