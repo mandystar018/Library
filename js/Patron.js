@@ -3,6 +3,7 @@ class Patron {
     this.name = name;
     this.email = email;
     this.currentBook = null; // <== because patron has not checkout a book yet.
+    this.balance = 0;
   }
   checkOut(book){
     this.currentBook = book;
